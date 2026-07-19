@@ -1,14 +1,4 @@
-/* =================================================================
-   SkillMatch Web - index.style.css v2
-   Design System Professional Premium
-   Mobile First | Flexbox & Grid
-   ================================================================= */
-
-/* ─────────────────────────────────────────────
-   1. DESIGN TOKENS
-   ───────────────────────────────────────────── */
 :root {
-  /* Cores Base */
   --bg-pagina:        #080C14;
   --bg-card:          rgba(16, 22, 38, 0.65);
   --bg-card-hover:    rgba(22, 31, 53, 0.85);
@@ -17,24 +7,16 @@
   --borda-hover:      rgba(255, 255, 255, 0.15);
   --borda-foco:       #3B82F6;
   --branco:           #FFFFFF;
-
-  /* Azul Profissional */
   --azul-600: #3B82F6;
   --azul-500: #60A5FA;
   --azul-400: #93C5FD;
   --azul-50:  #EFF6FF;
-
-  /* Roxo/Indigo */
   --indigo-500: #6366F1;
   --indigo-400: #818CF8;
-
-  /* Neutros */
   --cinza-900: #F8FAFC;
   --cinza-300: #CBD5E1;
   --cinza-400: #94A3B8;
   --cinza-500: #64748B;
-
-  /* Match Colors */
   --verde-600:  #10B981;
   --verde-500:  #34D399;
   --verde-900:  rgba(16, 185, 129, 0.15);
@@ -44,11 +26,8 @@
   --vermelho-600:#EF4444;
   --vermelho-500:#F87171;
   --vermelho-900:rgba(239, 68, 68, 0.15);
-
-  /* Tipografia */
   --fonte-corpo:   'Inter', system-ui, -apple-system, sans-serif;
   --fonte-titulo:  'Poppins', 'Inter', system-ui, sans-serif;
-
   --fs-xs:   0.75rem;
   --fs-sm:   0.875rem;
   --fs-base: 1rem;
@@ -58,14 +37,11 @@
   --fs-3xl:  2.5rem;
   --fs-4xl:  3.5rem;
   --fs-5xl:  4.5rem;
-
   --fw-normal:   400;
   --fw-medium:   500;
   --fw-semibold: 600;
   --fw-bold:     700;
   --fw-extrabold:800;
-
-  /* Espaçamentos */
   --sp-1:  0.25rem;
   --sp-2:  0.5rem;
   --sp-3:  0.75rem;
@@ -77,8 +53,6 @@
   --sp-12: 3rem;
   --sp-16: 4rem;
   --sp-20: 5rem;
-
-  /* Bordas */
   --radius-sm:   0.375rem;
   --radius-md:   0.75rem;
   --radius-lg:   1rem;
@@ -86,29 +60,20 @@
   --radius-2xl:  1.75rem;
   --radius-3xl:  2.25rem;
   --radius-full: 9999px;
-
-  /* Sombras */
   --sombra-sm:   0 2px 8px rgba(0,0,0,0.4);
   --sombra-md:   0 8px 32px rgba(0,0,0,0.5);
   --sombra-lg:   0 20px 60px rgba(0,0,0,0.6);
   --sombra-azul: 0 4px 24px rgba(59, 130, 246, 0.35);
   --sombra-card: 0 8px 40px rgba(0,0,0,0.5);
-
-  /* Duração */
   --trans-rapida: 200ms cubic-bezier(0.4, 0, 0.2, 1);
   --trans-base:   400ms cubic-bezier(0.4, 0, 0.2, 1);
   --trans-lenta:  600ms cubic-bezier(0.16, 1, 0.3, 1);
-
-  /* Layout */
   --max-largura: 75rem;
   --max-form:    36rem;
   --nav-altura:  4.5rem;
   --z-nav: 100;
 }
 
-/* ─────────────────────────────────────────────
-   2. RESET & BASE
-   ───────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -148,7 +113,6 @@ ul, ol { list-style: none; }
   border-radius: var(--radius-sm);
 }
 
-/* Scrollbar Personalizada */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-pagina); }
 ::-webkit-scrollbar-thumb {
@@ -156,9 +120,6 @@ ul, ol { list-style: none; }
   border-radius: var(--radius-full);
 }
 
-/* ─────────────────────────────────────────────
-   3. GLASS BG OVERLAY GLOBAL
-   ───────────────────────────────────────────── */
 body::before {
   content: '';
   position: fixed;
@@ -171,9 +132,6 @@ body::before {
   z-index: 0;
 }
 
-/* ─────────────────────────────────────────────
-   4. CONTAINERS
-   ───────────────────────────────────────────── */
 .section-container {
   max-width: var(--max-largura);
   margin-inline: auto;
@@ -205,7 +163,6 @@ body::before {
   max-width: 60ch;
 }
 
-/* Scroll Reveal Animation */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -216,9 +173,6 @@ body::before {
   transform: translateY(0);
 }
 
-/* ─────────────────────────────────────────────
-   5. BOTOES
-   ───────────────────────────────────────────── */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -279,9 +233,6 @@ body::before {
   transform: none !important;
 }
 
-/* ─────────────────────────────────────────────
-   6. NAV / HEADER
-   ───────────────────────────────────────────── */
 .site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -358,9 +309,6 @@ body::before {
 
 .nav-cta { display: none; }
 
-/* ─────────────────────────────────────────────
-   7. HERO SECTION (Full Screen + Animated BG)
-   ───────────────────────────────────────────── */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -370,7 +318,6 @@ body::before {
   padding: var(--nav-altura) var(--sp-4) var(--sp-16);
 }
 
-/* Animated Background Circles */
 .hero__bg {
   position: absolute;
   inset: 0;
@@ -415,7 +362,6 @@ body::before {
   75% { transform: translate(20px, 30px) scale(1.02); }
 }
 
-/* Grid overlay sutil */
 .hero__bg::after {
   content: '';
   position: absolute;
@@ -485,7 +431,6 @@ body::before {
   margin-bottom: var(--sp-10);
 }
 
-/* Stats */
 .hero__stats {
   display: flex;
   align-items: center;
@@ -515,7 +460,6 @@ body::before {
   background: linear-gradient(180deg, transparent, var(--borda), transparent);
 }
 
-/* Hero Preview Card */
 .hero__preview {
   position: relative;
   display: flex;
@@ -647,7 +591,6 @@ body::before {
   border-top: 1px solid var(--borda);
 }
 
-/* Mini Card */
 .card-preview--mini {
   position: absolute;
   bottom: -0.5rem;
@@ -673,7 +616,6 @@ body::before {
   color: var(--verde-500);
 }
 
-/* Scroll Indicator */
 .hero__scroll {
   position: absolute;
   bottom: 2rem;
@@ -700,9 +642,6 @@ body::before {
   background: linear-gradient(180deg, var(--cinza-500), transparent);
 }
 
-/* ─────────────────────────────────────────────
-   8. COMO FUNCIONA
-   ───────────────────────────────────────────── */
 .como-funciona {
   position: relative;
   padding: var(--sp-20) var(--sp-4);
@@ -717,14 +656,20 @@ body::before {
   background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
 }
 
-.steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--sp-6);
+.steps-carousel {
+  position: relative;
   margin-top: var(--sp-8);
 }
 
+.steps-carousel__track {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  gap: var(--sp-6);
+}
+
 .step {
+  min-width: 100%;
   background: var(--bg-card);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -737,6 +682,7 @@ body::before {
   text-align: center;
   gap: var(--sp-4);
   transition: all var(--trans-base);
+  box-sizing: border-box;
 }
 .step:hover {
   transform: translateY(-6px);
@@ -771,9 +717,55 @@ body::before {
   line-height: 1.7;
 }
 
-/* ─────────────────────────────────────────────
-   9. PERFIL / FORMULARIO
-   ───────────────────────────────────────────── */
+.steps-carousel__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+.steps-carousel__btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  color: var(--cinza-400);
+  font-size: var(--fs-lg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--trans-rapida);
+}
+.steps-carousel__btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--azul-600);
+  color: var(--branco);
+}
+
+.steps-carousel__dots {
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.steps-carousel__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: var(--radius-full);
+  background: var(--cinza-500);
+  border: none;
+  cursor: pointer;
+  transition: all var(--trans-rapida);
+  padding: 0;
+}
+.steps-carousel__dot--ativo {
+  background: var(--azul-600);
+  width: 1.5rem;
+  border-radius: var(--radius-full);
+}
+
 .section-perfil {
   padding: var(--sp-20) var(--sp-4);
   position: relative;
@@ -896,9 +888,6 @@ body::before {
   display: block;
 }
 
-/* ─────────────────────────────────────────────
-   10. SEÇÕES DE RESULTADO
-   ───────────────────────────────────────────── */
 .section-vagas[hidden],
 .section-melhor-vaga[hidden],
 .section-recomendacao[hidden] { display: none; }
@@ -935,7 +924,6 @@ body::before {
   font-weight: var(--fw-medium);
 }
 
-/* Loading / Erro / Vazio */
 .estado-loading[hidden],
 .estado-erro[hidden],
 .estado-vazio[hidden] { display: none; }
@@ -973,18 +961,18 @@ body::before {
 
 .estado-vazio__ico { font-size: var(--fs-3xl); }
 
-/* ─────────────────────────────────────────────
-   11. GRID DE VAGAS
-   ───────────────────────────────────────────── */
 .vagas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--sp-6);
+  align-items: stretch;
 }
 
-/* ─────────────────────────────────────────────
-   12. CARD DE VAGA
-   ───────────────────────────────────────────── */
+.vagas-grid > .card-vaga {
+  flex: 1 1 20rem;
+  max-width: 100%;
+}
+
 .card-vaga {
   background: var(--bg-card);
   backdrop-filter: blur(12px);
@@ -1071,7 +1059,6 @@ body::before {
   margin-top: 2px;
 }
 
-/* Badge Classificação */
 .badge-classificacao {
   padding: var(--sp-1) var(--sp-3);
   border-radius: var(--radius-full);
@@ -1094,7 +1081,6 @@ body::before {
   color: var(--vermelho-500);
 }
 
-/* Compatibilidade */
 .card-vaga__compat {
   display: flex;
   flex-direction: column;
@@ -1135,7 +1121,6 @@ body::before {
 .barra-progresso__fill--media  { background: linear-gradient(90deg, var(--amarelo-600), var(--amarelo-500)); }
 .barra-progresso__fill--baixa  { background: linear-gradient(90deg, var(--vermelho-600), var(--vermelho-500)); }
 
-/* Habilidades */
 .card-vaga__habilidades {
   display: flex;
   flex-direction: column;
@@ -1156,7 +1141,6 @@ body::before {
   margin-bottom: 2px;
 }
 
-/* META INFO - Salary + Modality redesigned */
 .card-vaga__meta {
   display: flex;
   gap: var(--sp-3);
@@ -1192,9 +1176,6 @@ body::before {
   color: var(--azul-400);
 }
 
-/* ─────────────────────────────────────────────
-   13. MELHOR VAGA DESTAQUE
-   ───────────────────────────────────────────── */
 .card-vaga--destaque {
   border: 1px solid rgba(59, 130, 246, 0.5);
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, var(--bg-card) 100%);
@@ -1243,9 +1224,6 @@ body::before {
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
-/* ─────────────────────────────────────────────
-   14. RECOMENDAÇÕES
-   ───────────────────────────────────────────── */
 .recomendacoes-container {
   display: flex;
   flex-direction: column;
@@ -1265,12 +1243,17 @@ body::before {
 .recomendacao-intro strong { color: var(--branco); }
 
 .recomendacoes-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--sp-4);
   padding: var(--sp-5) 0;
   background: transparent;
   border: none;
+}
+
+.recomendacoes-lista > .skill-pill {
+  flex: 1 1 12rem;
+  max-width: 100%;
 }
 
 .skill-pill {
@@ -1326,9 +1309,6 @@ body::before {
   font-weight: var(--fw-semibold);
 }
 
-/* ─────────────────────────────────────────────
-   15. FOOTER
-   ───────────────────────────────────────────── */
 .site-footer {
   background: #04060A;
   border-top: 1px solid var(--borda);
@@ -1409,9 +1389,6 @@ body::before {
   width: 100%;
 }
 
-/* ─────────────────────────────────────────────
-   16. RESPONSIVE - TABLET (640px+)
-   ───────────────────────────────────────────── */
 @media (min-width: 40rem) {
   .nav-links { display: flex; }
   .nav-cta { display: inline-flex; }
@@ -1420,14 +1397,9 @@ body::before {
   .hero__descricao { font-size: var(--fs-lg); }
   .hero__stat-num { font-size: var(--fs-3xl); }
 
-  .vagas-grid { grid-template-columns: repeat(2, 1fr); }
-
   .section-titulo { font-size: var(--fs-3xl); }
 }
 
-/* ─────────────────────────────────────────────
-   17. RESPONSIVE - DESKTOP (1024px+)
-   ───────────────────────────────────────────── */
 @media (min-width: 64rem) {
   .hero { padding: var(--nav-altura) var(--sp-4) 0; }
 
@@ -1438,9 +1410,7 @@ body::before {
   }
 
   .hero__content { flex: 1; max-width: 48rem; }
-
   .hero__titulo { font-size: var(--fs-5xl); }
-
   .hero__preview { flex-shrink: 0; max-width: 30rem; }
 
   .section-container--split {
@@ -1457,9 +1427,18 @@ body::before {
 
   .perfil-form-wrapper { flex: 1; max-width: var(--max-form); }
 
-  .vagas-grid { grid-template-columns: repeat(2, 1fr); gap: var(--sp-6); }
+  .steps-carousel__track {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-6);
+    overflow: visible;
+  }
 
-  .recomendacoes-lista { grid-template-columns: repeat(3, 1fr); }
+  .steps-carousel__track > * {
+    flex: 1 1 16rem;
+  }
+
+  .steps-carousel__nav { display: none; }
 
   .footer-container {
     flex-direction: row;
@@ -1468,9 +1447,6 @@ body::before {
   }
 }
 
-/* ─────────────────────────────────────────────
-   18. REDUCED MOTION
-   ───────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -1480,21 +1456,4 @@ body::before {
   }
   .card-preview { animation: none !important; }
   .hero__scroll { animation: none !important; }
-}
-
-/* ─────────────────────────────────────────────
-   19. ANIMAÇÕES EXTRAS
-   ───────────────────────────────────────────── */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.5); }
-}
-
-.card-vaga--destaque .melhor-vaga-faixa {
-  animation: pulseGlow 3s ease-in-out infinite;
 }
