@@ -360,54 +360,75 @@ export function renderizarRecomendacoes(habilidades, melhorVaga) {
  */
 function obterLogoSVG(empresa) {
   const norm = empresa.toLowerCase();
-  
+
   if (norm.includes('techcorp')) {
-    // Hexágono tecnológico (TechCorp)
     return `
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--blue" aria-hidden="true">
-        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-        <path d="M2 17l10 5 10-5"></path>
-        <path d="M2 12l10 5 10-5"></path>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--blue" aria-hidden="true">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" fill="currentColor" fill-opacity="0.15"/>
+        <path d="M2 17l10 5 10-5"/>
+        <path d="M2 12l10 5 10-5"/>
+        <circle cx="12" cy="12" r="2.5" fill="currentColor" fill-opacity="0.5"/>
       </svg>`;
   }
   if (norm.includes('inovasoft')) {
-    // Foguete / Infinito dinâmico (InovaSoft)
     return `
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--purple" aria-hidden="true">
-        <path d="M4.5 16.5c-1.5-1.25-2.5-3-2.5-4.5 0-3 2.5-5.5 5.5-5.5 2 0 3.5 1 5 3 1.5-2 3-3 5-3 3 0 5.5 2.5 5.5 5.5 0 1.5-1 3.25-2.5 4.5"></path>
-        <path d="M12 7v10"></path>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--purple" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity="0.08"/>
+        <path d="M9 9c1.5-2 3-3 5-3 3 0 5.5 2.5 5.5 5.5 0 1.5-1 3.25-2.5 4.5M15 15c-1.5 1.25-2.5 3-2.5 4.5 0 3-2.5 5.5-5.5 5.5C4 25 2 22.5 2 19.5c0-1.5 1-3.25 2.5-4.5"/>
+        <circle cx="9" cy="15" r="2" fill="currentColor" fill-opacity="0.4"/>
       </svg>`;
   }
   if (norm.includes('inclusify')) {
-    // Escudo com checkmark (Inclusify)
     return `
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--green" aria-hidden="true">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-        <path d="m9 12 2 2 4-4"></path>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--green" aria-hidden="true">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="currentColor" fill-opacity="0.12"/>
+        <path d="m9 12 2 2 4-4" stroke-width="3"/>
       </svg>`;
   }
   if (norm.includes('speedbuild')) {
-    // Raio (SpeedBuild)
     return `
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--orange" aria-hidden="true">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--orange" aria-hidden="true">
+        <rect x="2" y="3" width="20" height="18" rx="4" fill="currentColor" fill-opacity="0.06"/>
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" fill="currentColor" fill-opacity="0.2"/>
       </svg>`;
   }
   if (norm.includes('shopsmart')) {
-    // Sacola de compras inteligente (ShopSmart)
     return `
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--pink" aria-hidden="true">
-        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--pink" aria-hidden="true">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" fill="currentColor" fill-opacity="0.08"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 0 1-8 0" stroke-width="2.5"/>
+      </svg>`;
+  }
+  if (norm.includes('pixelstudio')) {
+    return `
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--purple" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="3" fill="currentColor" fill-opacity="0.08"/>
+        <circle cx="12" cy="12" r="3" fill="currentColor" fill-opacity="0.15"/>
+        <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+      </svg>`;
+  }
+  if (norm.includes('codebridge')) {
+    return `
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--blue" aria-hidden="true">
+        <polyline points="16 18 22 12 16 6" fill="currentColor" fill-opacity="0.06"/>
+        <polyline points="8 6 2 12 8 18" fill="currentColor" fill-opacity="0.06"/>
+        <line x1="10" y1="3" x2="14" y2="21"/>
+      </svg>`;
+  }
+  if (norm.includes('openweb')) {
+    return `
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--green" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" fill="currentColor" fill-opacity="0.06"/>
+        <ellipse cx="12" cy="12" rx="4" ry="10" fill="currentColor" fill-opacity="0.08"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
       </svg>`;
   }
   
-  // Genérico: Maleta
   return `
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--cyan" aria-hidden="true">
-      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-logo svg-logo--cyan" aria-hidden="true">
+      <rect x="2" y="7" width="20" height="14" rx="2" ry="2" fill="currentColor" fill-opacity="0.06"/>
+      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" fill="currentColor" fill-opacity="0.08"/>
     </svg>`;
 }
 
@@ -535,12 +556,13 @@ function criarCardVaga(resultado, destaque) {
   meta.classList.add('card-vaga__meta');
 
   const metaMod = document.createElement('span');
-  metaMod.classList.add('card-vaga__meta-item');
-  metaMod.innerHTML = `<span aria-hidden="true">💼</span> ${vaga.modalidade}`;
+  metaMod.classList.add('card-vaga__meta-item', 'card-vaga__meta-item--modalidade');
+  const modalidadeIcon = vaga.modalidade === 'Remoto' ? '🌐' : vaga.modalidade === 'Híbrido' ? '🏢' : '📍';
+  metaMod.innerHTML = `${modalidadeIcon} ${vaga.modalidade}`;
 
   const metaSal = document.createElement('span');
-  metaSal.classList.add('card-vaga__meta-item');
-  metaSal.innerHTML = `<span aria-hidden="true">💰</span> ${vaga.salario}`;
+  metaSal.classList.add('card-vaga__meta-item', 'card-vaga__meta-item--salario');
+  metaSal.innerHTML = `💰 ${vaga.salario}`;
 
   meta.appendChild(metaMod);
   meta.appendChild(metaSal);
@@ -599,4 +621,25 @@ export function setBtnCarregando(carregando) {
     el.btnAnalisar.removeAttribute('aria-disabled');
     el.btnAnalisar.innerHTML = '<span class="btn__ico" aria-hidden="true">🔍</span> Analisar Perfil';
   }
+}
+
+// ─── Scroll Reveal (Intersection Observer) ────────────────────────────────────
+/**
+ * Inicializa o efeito de revelação ao scroll usando IntersectionObserver.
+ * Ativa a classe 'visivel' nos elementos com classe 'reveal' quando entram na viewport.
+ */
+export function initScrollReveal() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visivel');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+  );
+
+  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 }

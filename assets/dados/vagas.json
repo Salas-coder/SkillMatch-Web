@@ -43,5 +43,32 @@
     "salario": "R$ 3.100",
     "requisitos": ["html", "css", "javascript", "git", "fetch", "json", "responsive design"],
     "descricao": "Integre funcionalidades de e-commerce conectando o front-end com APIs REST. Bom domínio de fetch e JSON é exigido."
+  },
+  {
+    "id": 6,
+    "empresa": "PixelStudio Design",
+    "cargo": "Front-End Júnior — UI/UX",
+    "modalidade": "Remoto",
+    "salario": "R$ 3.400",
+    "requisitos": ["html", "css", "javascript", "figma", "responsive design", "git"],
+    "descricao": "Transforme layouts do Figma em interfaces responsivas e acessíveis. Buscamos alguém com senso estético e domínio de CSS moderno."
+  },
+  {
+    "id": 7,
+    "empresa": "CodeBridge Labs",
+    "cargo": "Front-End Júnior — TypeScript",
+    "modalidade": "Híbrido",
+    "salario": "R$ 3.600",
+    "requisitos": ["html", "css", "typescript", "react", "git", "rest api"],
+    "descricao": "Participe da migração do nosso sistema legado para React com TypeScript. Conhecimento em REST APIs é essencial para integração com o backend."
+  },
+  {
+    "id": 8,
+    "empresa": "OpenWeb Tech",
+    "cargo": "Front-End Júnior — Modern Web",
+    "modalidade": "Presencial",
+    "salario": "R$ 3.000",
+    "requisitos": ["html", "css", "javascript", "sass", "github", "acessibilidade"],
+    "descricao": "Trabalhe com tecnologias modernas de front-end em projetos colaborativos. Valorizamos boas práticas de versionamento com GitHub e acessibilidade web."
   }
 ]

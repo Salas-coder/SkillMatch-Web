@@ -39,6 +39,7 @@ import {
   mostrarErroVagas,
   toggleSecao,
   setBtnCarregando,
+  initScrollReveal,
 } from './ui.js';
 
 // ─── Inicialização da aplicação ───────────────────────────────────────────────
@@ -59,10 +60,13 @@ const inicializarApp = () => {
     console.info('[main] Perfil restaurado do localStorage.');
   }
 
-  // 3. Registra o evento de submit do formulário
+  // 3. Inicializa scroll reveal animations
+  initScrollReveal();
+
+  // 4. Registra o evento de submit do formulário
   registrarFormulario();
 
-  // 4. Registra o botão "Tentar novamente" do estado de erro
+  // 5. Registra o botão "Tentar novamente" do estado de erro
   registrarBtnTentarNovamente();
 };
 
