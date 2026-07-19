@@ -82,14 +82,18 @@ skillmatch-web/
 - feature/persistencia — localStorage
 - feature/design — estilização profissional
 
-## Trello
+## 📋 Trello
 
- Link para o quadro Kanban:
+O quadro Kanban utilizado para organizar o desenvolvimento do projeto pode ser acessado no link abaixo:
 
-
-
-## Vídeo de apresentação
-
- (Google Drive) Link do Video:
-
+**🔗 Link do Trello:**  
 https://trello.com/invite/b/6a5ce5c64749d9cf8a3ee48e/ATTI5f37cb4dee6e18df014fc331cfbffb175640C9DA/skill-match-web
+
+---
+
+## 🎥 Vídeo de Apresentação
+
+O vídeo de apresentação do projeto está disponível no Google Drive através do link abaixo:
+
+**🔗 Link do vídeo:**  
+https://drive.google.com/file/d/1zEAdFkZylP2N44M4za8Pm51jYXZk8bqX/view?usp=drive_link
