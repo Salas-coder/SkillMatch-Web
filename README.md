@@ -1,4 +1,4 @@
-# SkillMatch Web
+# SkillMatch Web.
 
 Plataforma de matching profissional para vagas de Front-End Júnior.
 
