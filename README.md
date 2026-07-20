@@ -96,4 +96,4 @@ https://trello.com/invite/b/6a5ce5c64749d9cf8a3ee48e/ATTI5f37cb4dee6e18df014fc33
 O vídeo de apresentação do projeto está disponível no Google Drive através do link abaixo:
 
 **🔗 Link do vídeo:**  
-https://drive.google.com/file/d/1zEAdFkZylP2N44M4za8Pm51jYXZk8bqX/view?usp=drive_link
+https://drive.google.com/file/d/10b52GLdNeSv3GbUJdjLWkXe3sRtg6eou/view?usp=sharing
